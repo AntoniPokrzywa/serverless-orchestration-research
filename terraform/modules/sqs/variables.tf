@@ -21,12 +21,6 @@ variable "max_message_size" {
   default     = 262144 # 256 KB
 }
 
-variable "dead_letter_target_arn" {
-  description = "ARN of the dead-letter queue to receive messages after max_receive_count is exceeded"
-  type        = string
-  default     = null
-}
-
 variable "tags" {
   description = "Tags to assign to the queue"
   type        = map(string)

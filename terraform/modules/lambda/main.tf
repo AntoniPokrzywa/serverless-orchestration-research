@@ -6,6 +6,7 @@ data "archive_file" "this" {
 
 resource "aws_lambda_function" "this" {
   function_name    = var.function_name
+  role             = var.role_arn
   handler          = var.handler
   runtime          = var.runtime
   memory_size      = var.memory_size

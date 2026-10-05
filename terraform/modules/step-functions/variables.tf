@@ -3,6 +3,11 @@ variable "name" {
   type        = string
 }
 
+variable "role_arn" {
+  description = "ARN of the IAM role for the state machine"
+  type        = string
+}
+
 variable "definition" {
   description = "Amazon States Language (ASL) JSON definition"
   type        = string
